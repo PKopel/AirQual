@@ -1,6 +1,6 @@
 import json
 
-dir = 'measurements/12-3-2022'
+dir = 'measurements/15-3-2022'
 
 with open('sensors_list.json', 'r') as f:
     sensors = json.load(f)
