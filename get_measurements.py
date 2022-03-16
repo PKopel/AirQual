@@ -37,3 +37,5 @@ for id in ids:
             json.dump(result.json(), f, indent=4, sort_keys=True)
 
         print(id)
+    else:
+        break

@@ -1,6 +1,9 @@
 import json
+import datetime
 
-dir = 'measurements/15-3-2022'
+date = datetime.datetime.now()
+dir = f'measurements/{date.day}-{date.month}-{date.year}'
+
 
 with open('sensors_list.json', 'r') as f:
     sensors = json.load(f)
@@ -22,5 +25,7 @@ def check_sensor(sensor):
 sensors = list(filter(check_sensor, sensors))
 
 
-with open(f'wind_sensors.json', 'w') as f:
+with open(f'sensors_list.json', 'w') as f:
     json.dump(sensors, f, indent=4, sort_keys=True)
+
+print(len(sensors))
