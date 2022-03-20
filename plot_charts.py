@@ -93,10 +93,10 @@ for v in measurements_list:
 
 
 for type, colour in types.items():
-    fig, ax = plt.subplots(figsize=(20, 20))
+    fig, ax = plt.subplots(figsize=(10, 10))
     xs = map(lambda x: x[0], type_values[type])
     ys = map(lambda y: y[1], type_values[type])
-    ax.scatter(list(xs), list(ys), c=colour, label=type)
+    ax.scatter(list(xs), list(ys), s=(200./fig.dpi)**2, c=colour, label=type)
     plt.title(f'{type} ppm value to wind speed')
     plt.xlabel('wind speed')
     plt.ylabel('ppm')
@@ -120,10 +120,10 @@ for v in measurements_list:
 
 
 for type, colour in types.items():
-    fig, ax = plt.subplots(figsize=(20, 20))
+    fig, ax = plt.subplots(figsize=(10, 10))
     xs = map(lambda x: x[0], type_values[type])
     ys = map(lambda y: y[1], type_values[type])
-    ax.scatter(list(xs), list(ys), c=colour, label=type)
+    ax.scatter(list(xs), list(ys), s=(200./fig.dpi)**2, c=colour, label=type)
     plt.title(f'{type} ppm value to humidity')
     plt.xlabel('humidity [%]')
     plt.ylabel('ppm')
