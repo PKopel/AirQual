@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: 3.8 #install the python needed
       - name: setup API keys
-        run: echo ${{ secrets.API_KEYS }} > Airly_API.json
-      - name: execute py script # run the run.py to get the latest data
+        run: echo "${{ secrets.API_KEYS }}" > Airly_API.json
+      - name: execute py script # run the get_measurements.py to get the latest data
         run: python get_measurements.py
       - name: commit measurements
         run: |
