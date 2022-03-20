@@ -20,7 +20,8 @@ jobs:
       - name: install dependencies
         run: python -m pip install -r requirements.txt
       - name: setup API keys
-        run: echo "${{ secrets.API_KEYS }}" > Airly_API.json
+        run: |
+          echo "${{ secrets.API_KEYS }}" > Airly_API.json
       - name: execute py script # run the get_measurements.py to get the latest data
         run: python get_measurements.py
       - name: commit measurements
