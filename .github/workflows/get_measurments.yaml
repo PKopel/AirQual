@@ -18,12 +18,17 @@ jobs:
         with:
           python-version: 3.8 #install the python needed
       - name: install dependencies
-        run: python -m pip install -r requirements.txt
-      - name: setup API keys
         run: |
-          echo "${{ secrets.API_KEYS }}" > Airly_API.json
+          python -m pip install -r requirements.txt
+      - name: setup API keys
+        shell: bash
+        env:
+          API_KEYS: ${{ secrets.API_KEYS }}
+        run: |
+          echo "$API_KEYS" > Airly_API.json
       - name: execute py script # run the get_measurements.py to get the latest data
-        run: python get_measurements.py
+        run: |
+          python get_measurements.py
       - name: commit measurements
         run: |
           git config user.name 'github-action'
