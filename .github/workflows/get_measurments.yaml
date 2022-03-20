@@ -1,0 +1,29 @@
+name: Get measurements from Airly
+
+on:
+  schedule:
+    # Runs "1 am every day" (see https://crontab.guru)
+    - cron: "0 1 * * *"
+jobs:
+  build:
+    name: Get measurements from Airly
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: setup API keys
+        run: echo ${{ secrets.API_KEYS }} > Airly_API.json
+      - name: execute py script # run the run.py to get the latest data
+        run: python get_measurements.py
+      - name: commit measurements
+        run: |
+          git config user.name 'github-action'
+          git config user.email 'github-actions@github.com'
+          git add ./measurements
+          git commit -m "Automated measurements commit"
+          git push
