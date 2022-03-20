@@ -9,7 +9,7 @@ with open('sensors_list.json', 'r') as f:
     sensors = json.load(f)
 
 
-def check_sensor(sensor):
+def check_sensor(sensor: dict):
     id = sensor['id']
     try:
         with open(f'{dir}/{id}.json', 'r') as f:
