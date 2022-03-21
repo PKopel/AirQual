@@ -83,7 +83,7 @@ for type, colour in tqdm(types.items()):
     plt.xlabel("hour")
     plt.ylabel("mean ppm")
     plt.savefig('charts/ppm_to_hour.png')
-    plt.close('all')
+plt.close('all')
 
 
 
