@@ -35,7 +35,17 @@ jobs:
         run: |
           python get_measurements.py
 
-      - name: commit measurements
+      - name: update all_measurements.csv
+        run: |
+          python generate_csv.py
+
+      - name: compress new raw data
+        shell: bash
+        run: |
+          ls -d measurements/raw/* | grep -v .tar.gz | xargs -I {} tar -zcf {}.tar.gz {}
+        # ls -d measurements/raw/* | grep -v .tar.gz | xargs rm -rf
+
+      - name: commit changes
         run: |
           git config user.name 'github-action'
           git config user.email 'github-actions@github.com'
