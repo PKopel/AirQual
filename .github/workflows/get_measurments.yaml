@@ -35,6 +35,14 @@ jobs:
         run: |
           python get_measurements.py
 
+      - name: commit changes
+        run: |
+          git config user.name 'github-action'
+          git config user.email 'github-actions@github.com'
+          git add ./measurements
+          git commit -m "Automated measurements commit"
+          git push
+
       - name: update all_measurements.csv
         run: |
           python generate_csv.py
