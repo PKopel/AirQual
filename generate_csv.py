@@ -15,7 +15,7 @@ def make_measurements_csv(measurements_dir):
 
     sensor_data = {}
 
-    with open('./sensors_list.json', 'r') as f:
+    with open(SENSORS_FILE, 'r') as f:
         sensor_json = json.load(f)
         for sensor in sensor_json:
             sensor_data[sensor["id"]] = sensor
