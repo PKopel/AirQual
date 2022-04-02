@@ -1,4 +1,4 @@
-# Airly scripts
+# Air Quality in Cracow
 Scripts downloading air quality data from [Airly](https://developer.airly.org/en).
 
 ## Usage
