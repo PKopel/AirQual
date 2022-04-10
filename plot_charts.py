@@ -80,6 +80,44 @@ def ppm_to_hour():
 all_charts.append(ppm_to_hour)
 
 ###################################################################
+# mean ppm to time of day on a week/weekend day
+###################################################################
+
+
+def ppm_to_hour_day(week: bool = True):
+    print('''
+###################################################################
+    Plotting mean ppm to time of day chart:''')
+
+    meas_by_h = measurements_df.groupby([WEEKDAY, HOUR], dropna=True)
+
+    days, title, file = ([0, 1, 2, 3, 4], 'a week day', 'week_day') if week\
+        else ([5, 6], 'weekend', 'weekend')
+
+    def filtr(k): return k[0] in days
+
+    fig, ax = plt.subplots()
+    for type, colour in tqdm(TYPES.items()):
+        hours = list(range(24))
+        keys = list(filter(filtr, meas_by_h.groups.keys()))
+        values = {h: 0 for h in hours}
+        for key in tqdm(keys):
+            values[key[1]] += meas_by_h.get_group(key)[type].mean()
+        values = list(map(lambda x: x/len(days), list(values.values())))
+        ax.scatter(hours, values, c=colour, label=type)
+    ax.legend()
+    plt.title(f'Mean ppm values in 24h on {title}')
+    plt.xlabel(HOUR)
+    plt.ylabel("mean ppm")
+    plt.savefig(f'charts/ppm_to_hour_{file}.png')
+    plt.close('all')
+
+
+all_charts.append(ppm_to_hour_day)
+all_charts.append(lambda: ppm_to_hour_day(False))
+
+
+###################################################################
 # mean ppm to time of day over a week chart
 ###################################################################
 
@@ -340,6 +378,10 @@ else:
             ppm_to_hour_week()
         elif arg == 'week_':
             ppm_to_hour_week(False)
+        elif arg == 'we':
+            ppm_to_hour_day(False)
+        elif arg == 'wd':
+            ppm_to_hour_day()
         elif arg == 'hum':
             ppm_to_hum()
         elif arg == 'ws':
