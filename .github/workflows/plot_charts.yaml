@@ -1,0 +1,38 @@
+name: Plot charts
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Get measurements from Airly"]
+    types:
+      - completed
+
+jobs:
+  get_measurements:
+    name: Plot charts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+
+      - name: install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+
+      - name: execute py script # run the plot_charts.py to update charts with latest data
+        run: |
+          python plot_charts.py
+
+      - name: commit changes
+        run: |
+          git config user.name 'github-action'
+          git config user.email 'github-actions@github.com'
+          git add ./measurements
+          git commit -m "Automated charts commit"
+          git push

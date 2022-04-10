@@ -169,6 +169,7 @@ def ppm_to_hour_week(vertical: bool = True):
 
 
 all_charts.append(ppm_to_hour_week)
+all_charts.append(lambda: ppm_to_hour_week(False))
 
 ###################################################################
 # ppm to wind force chart
