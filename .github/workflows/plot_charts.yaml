@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name 'github-action'
           git config user.email 'github-actions@github.com'
-          git add ./measurements
+          git add ./charts
           git commit -m "Automated charts commit"
           git push
