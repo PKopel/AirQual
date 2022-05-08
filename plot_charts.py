@@ -202,7 +202,7 @@ def ppm_to_hour_day_months():
         ax.scatter(hours, values,
                    c=colorlist[month-1 % len(colorlist)], label=month)
     ax.legend()
-    plt.title(f'Mean ppm values in 24h by months')
+    plt.title(f'Mean PM10 ppm values in 24h by months')
     plt.xlabel(HOUR)
     plt.ylabel("mean ppm")
     plt.savefig(f'charts/ppm_to_hour_months.png')
