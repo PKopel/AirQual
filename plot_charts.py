@@ -1,10 +1,11 @@
 import os
 import sys
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
+from sklearn.decomposition import PCA
 import pandas as pd
 import numpy as np
 import imageio
+import seaborn as sns
 import cv2 as cv
 from tqdm import tqdm
 
@@ -27,8 +28,11 @@ WIND_BEARING = 'wind_bearing'
 DATE = 'date'
 HOUR = 'hour'
 WEEKDAY = 'weekday'
+MONTH = 'month'
 
 TYPES = {PM1: 'red', PM25: 'green', PM10: 'blue'}
+
+colorlist = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
 
 anim_dump_dir = './charts/anim_dump'
 
@@ -46,7 +50,9 @@ measurements_df.loc[:, DATE] = measurements_df[FROM_DATE_TIME].map(
     lambda x: x.date)
 measurements_df.loc[:, WEEKDAY] = measurements_df[FROM_DATE_TIME].map(
     lambda x: x.weekday())
-measurements_df = measurements_df.set_index('fromDateTime')
+measurements_df[MONTH] = measurements_df[FROM_DATE_TIME].map(
+    lambda x: x.month)
+measurements_df.drop([FROM_DATE_TIME, TILL_DATE_TIME], axis=1, inplace=True)
 
 all_charts = []
 
@@ -170,6 +176,40 @@ def ppm_to_hour_week(vertical: bool = True):
 
 all_charts.append(ppm_to_hour_week)
 all_charts.append(lambda: ppm_to_hour_week(False))
+
+###################################################################
+# mean ppm to time of day by months
+###################################################################
+
+
+def ppm_to_hour_day_months():
+    print('''
+###################################################################
+    Plotting mean ppm to time of day chart:''')
+
+    meas_by_h = measurements_df.groupby([MONTH, HOUR], dropna=True)
+
+    def filtr(m): return lambda k: k[0] == m
+
+    fig, ax = plt.subplots()
+    for month in tqdm(measurements_df[MONTH].unique()):
+        hours = list(range(24))
+        keys = list(filter(filtr(month), meas_by_h.groups.keys()))
+        values = {h: 0 for h in hours}
+        for key in tqdm(keys):
+            values[key[1]] += meas_by_h.get_group(key)['PM10'].mean()
+        values = list(map(lambda x: x, list(values.values())))
+        ax.scatter(hours, values,
+                   c=colorlist[month-1 % len(colorlist)], label=month)
+    ax.legend()
+    plt.title(f'Mean ppm values in 24h by months')
+    plt.xlabel(HOUR)
+    plt.ylabel("mean ppm")
+    plt.savefig(f'charts/ppm_to_hour_months.png')
+    plt.close('all')
+
+
+all_charts.append(ppm_to_hour_day_months)
 
 ###################################################################
 # ppm to wind force chart
@@ -319,6 +359,83 @@ def hum_hist():
 all_charts.append(hum_hist)
 
 ###################################################################
+# correlation heatmap
+###################################################################
+
+
+def corr_heatmap():
+    print('''
+###################################################################
+    Plotting correlation heatmap:''')
+
+    colormap = plt.cm.viridis
+    data = measurements_df.iloc[:, 1:]
+    data.drop([DATE], axis=1, inplace=True)
+    plt.figure(figsize=(12, 12))
+    sns.heatmap(data.astype(float).corr(), linewidths=0.1, vmax=1.0,
+                square=True, cmap=colormap, linecolor='white', annot=True)
+    plt.savefig(f'charts/corr_heatmap.png')
+    plt.close('all')
+
+
+all_charts.append(corr_heatmap)
+
+###################################################################
+# PCA biplot
+###################################################################
+
+
+def pca_biplot():
+    print('''
+###################################################################
+    Plotting PCA biplot:''')
+
+    data = measurements_df.iloc[:, 1:]
+    data = data.dropna()
+    data.drop([DATE], axis=1, inplace=True)
+    data_n = (data-data.mean())/data.std()
+    array = data_n.values
+    pca = PCA()
+    X_pca = pca.fit_transform(array)
+    X_pca /= 10
+    points = pd.DataFrame(data['month'])
+    points['x'] = X_pca[:, 0]
+    points['y'] = X_pca[:, 1]
+
+    colormap = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
+
+    plt.figure(figsize=(18, 18))
+    for m in data['month'].unique():
+        m_points = points[points['month'] == m]
+        plt.scatter(m_points['x'], m_points['y'],
+                    c=colormap[m-1 % len(colormap)], label=m, s=1)
+
+    plt.xlabel("component 1")
+    plt.ylabel("component 2")
+    plt.legend()
+    plt.xlim([-1, 1])
+    plt.ylim([-1, 1])
+    comps_zipped = zip(pca.components_[0], pca.components_[
+                       1], data.columns.values)
+
+    for i, comps in enumerate(comps_zipped):
+        x, y, trait = comps
+        length = np.sqrt(x**2 + y**2)
+        x *= 3/(4*length)
+        y *= 3/(4*length)
+        plt.arrow(0, 0, x, y, head_width=0.01, head_length=0.02)
+        x *= 9/8
+        x -= 0.02
+        y *= 9/8
+        plt.text(x, y, trait, fontsize=14, c='blue')
+
+    plt.savefig('charts/pca_biplot.png')
+    plt.close('all')
+
+
+all_charts.append(pca_biplot)
+
+###################################################################
 # hourly anim map
 ###################################################################
 
@@ -377,6 +494,8 @@ else:
             ppm_to_hour()
         elif arg == 'week':
             ppm_to_hour_week()
+        elif arg == 'month':
+            ppm_to_hour_day_months()
         elif arg == 'week_':
             ppm_to_hour_week(False)
         elif arg == 'we':
@@ -391,5 +510,9 @@ else:
             wind_bearing_hist()
             wind_speed_hist()
             hum_hist()
+        elif arg == 'corr':
+            corr_heatmap()
+        elif arg == 'pca':
+            pca_biplot()
         elif arg == 'anim':
             h_anim_map()
