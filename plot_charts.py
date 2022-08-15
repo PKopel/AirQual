@@ -1,6 +1,7 @@
 import os
 import sys
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 from sklearn.decomposition import PCA
 import pandas as pd
 import numpy as np
@@ -32,8 +33,6 @@ MONTH = 'month'
 
 TYPES = {PM1: 'red', PM25: 'green', PM10: 'blue'}
 
-colorlist = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
-
 anim_dump_dir = './charts/anim_dump'
 
 if not os.path.exists(anim_dump_dir):
@@ -54,7 +53,7 @@ measurements_df[MONTH] = measurements_df[FROM_DATE_TIME].map(
     lambda x: x.month)
 measurements_df.drop([FROM_DATE_TIME, TILL_DATE_TIME], axis=1, inplace=True)
 
-all_charts = []
+all_charts = {}
 
 ###################################################################
 # mean ppm to time of day chart
@@ -83,7 +82,7 @@ def ppm_to_hour():
     plt.close('all')
 
 
-all_charts.append(ppm_to_hour)
+all_charts['hour'] = ppm_to_hour
 
 ###################################################################
 # mean ppm to time of day on a week/weekend day
@@ -119,8 +118,8 @@ def ppm_to_hour_day(week: bool = True):
     plt.close('all')
 
 
-all_charts.append(ppm_to_hour_day)
-all_charts.append(lambda: ppm_to_hour_day(False))
+all_charts['wd'] = ppm_to_hour_day
+all_charts['we'] = lambda: ppm_to_hour_day(False)
 
 
 ###################################################################
@@ -174,8 +173,8 @@ def ppm_to_hour_week(vertical: bool = True):
     plt.close('all')
 
 
-all_charts.append(ppm_to_hour_week)
-all_charts.append(lambda: ppm_to_hour_week(False))
+all_charts['week'] = ppm_to_hour_week
+all_charts['week_'] = lambda: ppm_to_hour_week(False)
 
 ###################################################################
 # mean ppm to time of day by months
@@ -199,8 +198,7 @@ def ppm_to_hour_day_months():
         for key in tqdm(keys):
             values[key[1]] += meas_by_h.get_group(key)['PM10'].mean()
         values = list(map(lambda x: x, list(values.values())))
-        ax.scatter(hours, values,
-                   c=colorlist[month-1 % len(colorlist)], label=month)
+        ax.scatter(hours, values, color=cm.Set3(month), label=month)
     ax.legend()
     plt.title(f'Mean PM10 ppm values in 24h by months')
     plt.xlabel(HOUR)
@@ -209,7 +207,7 @@ def ppm_to_hour_day_months():
     plt.close('all')
 
 
-all_charts.append(ppm_to_hour_day_months)
+all_charts['month'] = ppm_to_hour_day_months
 
 ###################################################################
 # ppm to wind force chart
@@ -235,7 +233,7 @@ def ppm_to_wind_speed():
         plt.close('all')
 
 
-all_charts.append(ppm_to_wind_speed)
+all_charts['ws'] = ppm_to_wind_speed
 
 ###################################################################
 # wind speed histogram
@@ -258,7 +256,7 @@ def wind_speed_hist():
     plt.close('all')
 
 
-all_charts.append(wind_speed_hist)
+all_charts['ws_hist'] = wind_speed_hist
 
 ###################################################################
 # ppm to wind bearing chart
@@ -284,7 +282,7 @@ def ppm_to_wind_bearing():
         plt.close('all')
 
 
-all_charts.append(ppm_to_wind_bearing)
+all_charts['wb'] = ppm_to_wind_bearing
 
 ###################################################################
 # wind bearing histogram
@@ -307,7 +305,7 @@ def wind_bearing_hist():
     plt.close('all')
 
 
-all_charts.append(wind_bearing_hist)
+all_charts['wb_hist'] = wind_bearing_hist
 
 ###################################################################
 # ppm to humidity chart
@@ -333,7 +331,7 @@ def ppm_to_hum():
         plt.close('all')
 
 
-all_charts.append(ppm_to_hum)
+all_charts['hum'] = ppm_to_hum
 
 ###################################################################
 # humidity histogram
@@ -356,7 +354,7 @@ def hum_hist():
     plt.close('all')
 
 
-all_charts.append(hum_hist)
+all_charts['hum_hist'] = hum_hist
 
 ###################################################################
 # correlation heatmap
@@ -378,7 +376,7 @@ def corr_heatmap():
     plt.close('all')
 
 
-all_charts.append(corr_heatmap)
+all_charts['corr'] = corr_heatmap
 
 ###################################################################
 # PCA biplot
@@ -402,13 +400,11 @@ def pca_biplot():
     points['x'] = X_pca[:, 0]
     points['y'] = X_pca[:, 1]
 
-    colormap = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
-
     plt.figure(figsize=(18, 18))
     for m in data['month'].unique():
         m_points = points[points['month'] == m]
         plt.scatter(m_points['x'], m_points['y'],
-                    c=colormap[m-1 % len(colormap)], label=m, s=1)
+                    color=cm.Set3(m), label=m, s=1)
 
     plt.xlabel("component 1")
     plt.ylabel("component 2")
@@ -433,7 +429,7 @@ def pca_biplot():
     plt.close('all')
 
 
-all_charts.append(pca_biplot)
+all_charts['pca'] = pca_biplot
 
 ###################################################################
 # hourly anim map
@@ -480,39 +476,18 @@ def h_anim_map():
                 writer.append_data(image)
 
 
+all_charts['anim'] = h_anim_map
+
+
 ###################################################################
 # main
 ###################################################################
 
-if len(sys.argv) < 2:
-    for chart in all_charts:
-        chart()
-    h_anim_map()
-else:
-    for arg in sys.argv[1:]:
-        if arg == 'hour':
-            ppm_to_hour()
-        elif arg == 'week':
-            ppm_to_hour_week()
-        elif arg == 'month':
-            ppm_to_hour_day_months()
-        elif arg == 'week_':
-            ppm_to_hour_week(False)
-        elif arg == 'we':
-            ppm_to_hour_day(False)
-        elif arg == 'wd':
-            ppm_to_hour_day()
-        elif arg == 'hum':
-            ppm_to_hum()
-        elif arg == 'ws':
-            ppm_to_wind_speed()
-        elif arg == 'hist':
-            wind_bearing_hist()
-            wind_speed_hist()
-            hum_hist()
-        elif arg == 'corr':
-            corr_heatmap()
-        elif arg == 'pca':
-            pca_biplot()
-        elif arg == 'anim':
-            h_anim_map()
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        for chart in all_charts.values():
+            chart()
+    else:
+        for arg in sys.argv[1:]:
+            if arg in all_charts.keys():
+                all_charts[arg]()
