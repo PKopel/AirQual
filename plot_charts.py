@@ -1,4 +1,5 @@
 import os
+import glob
 import sys
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
@@ -38,7 +39,12 @@ anim_dump_dir = './charts/anim_dump'
 if not os.path.exists(anim_dump_dir):
     os.makedirs(anim_dump_dir)
 
-measurements_df = pd.read_csv('./measurements/all_measurements.csv')
+measurements_df = pd.DataFrame()
+
+for q_csv in glob.glob('./measurements/q*'):
+    q_data = pd.read_csv(q_csv)
+    measurements_df = pd.concat([measurements_df, q_data])
+
 measurements_df[FROM_DATE_TIME] = measurements_df[FROM_DATE_TIME].map(
     pd.to_datetime)
 measurements_df[TILL_DATE_TIME] = measurements_df[TILL_DATE_TIME].map(

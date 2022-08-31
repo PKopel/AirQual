@@ -2,6 +2,7 @@ import os
 import json
 import pandas as pd
 from tqdm import tqdm
+from datetime import date
 
 SENSORS_FILE = './sensors_list.json'
 MEASUREMENTS_CSV = './measurements/all_measurements.csv'
@@ -39,7 +40,7 @@ def make_measurements_csv(measurements_dir):
                                 value["fromDateTime"])
                             new_entry[COLUMNS.index("tillDateTime")] = pd.to_datetime(
                                 value["tillDateTime"])
-                            if(sensor_id in sensor_data):
+                            if (sensor_id in sensor_data):
                                 new_entry[COLUMNS.index(
                                     "latitude")] = sensor_data[sensor_id]["location"]["latitude"]
                                 new_entry[COLUMNS.index(
@@ -51,25 +52,25 @@ def make_measurements_csv(measurements_dir):
                             for v in value['values']:
                                 m[v['name']] = v['value']
 
-                            if("PM1" in m):
+                            if ("PM1" in m):
                                 new_entry[COLUMNS.index("PM1")] = m["PM1"]
-                            if("PM10" in m):
+                            if ("PM10" in m):
                                 new_entry[COLUMNS.index("PM10")] = m["PM10"]
-                            if("PM25" in m):
+                            if ("PM25" in m):
                                 new_entry[COLUMNS.index("PM25")] = m["PM25"]
-                            if("PRESSURE" in m):
+                            if ("PRESSURE" in m):
                                 new_entry[COLUMNS.index(
                                     "pressure")] = m["PRESSURE"]
-                            if("HUMIDITY" in m):
+                            if ("HUMIDITY" in m):
                                 new_entry[COLUMNS.index(
                                     "humidity")] = m["HUMIDITY"]
-                            if("TEMPERATURE" in m):
+                            if ("TEMPERATURE" in m):
                                 new_entry[COLUMNS.index(
                                     "temperature")] = m["TEMPERATURE"]
-                            if("WIND_SPEED" in m):
+                            if ("WIND_SPEED" in m):
                                 new_entry[COLUMNS.index(
                                     "wind_speed")] = m["WIND_SPEED"]
-                            if("WIND_BEARING" in m):
+                            if ("WIND_BEARING" in m):
                                 new_entry[COLUMNS.index(
                                     "wind_bearing")] = m["WIND_BEARING"]
 
@@ -77,12 +78,18 @@ def make_measurements_csv(measurements_dir):
     return pd.DataFrame(data=data, columns=COLUMNS)
 
 
-if(__name__ == "__main__"):
-    old_data = pd.read_csv(MEASUREMENTS_CSV)
-    old_data = old_data[COLUMNS]
+if (__name__ == "__main__"):
+    quarter = (date.today().month-1)//3 + 1
+    year = date.today().year
+    MEASUREMENTS_CSV = f'./measurements/q{quarter}_{year}_measurements.csv'
     new_data = make_measurements_csv(f'{MEASUREMENTS_DIR}/raw')
 
-    data = pd.concat([old_data, new_data])
+    if os.path.exists(MEASUREMENTS_CSV):
+        old_data = pd.read_csv(MEASUREMENTS_CSV)
+        old_data = old_data[COLUMNS]
+        data = pd.concat([old_data, new_data])
+    else:
+        data = new_data
 
     data.to_csv(MEASUREMENTS_CSV)
     print(f"csv file saved to {MEASUREMENTS_CSV}")
