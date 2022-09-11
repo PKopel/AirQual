@@ -41,7 +41,7 @@ if not os.path.exists(anim_dump_dir):
 
 measurements_df = pd.DataFrame()
 
-for q_csv in glob.glob('./measurements/q*'):
+for q_csv in glob.glob('./data/csv/q*'):
     q_data = pd.read_csv(q_csv)
     measurements_df = pd.concat([measurements_df, q_data])
 

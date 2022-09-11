@@ -4,7 +4,7 @@ import datetime
 import pathlib
 import random
 
-with open('sensors_list.json', 'r') as f:
+with open('./data/sensors_list.json', 'r') as f:
     sensors = json.load(f)
 
 with open('Airly_API.json', 'r') as f:
@@ -12,7 +12,7 @@ with open('Airly_API.json', 'r') as f:
     n_api_keys = len(api_keys)
 
 date = datetime.datetime.now()
-dir = f'measurements/raw/{date.day}-{date.month}-{date.year}'
+dir = f'./data/raw/{date.day}-{date.month}-{date.year}'
 
 pathlib.Path(dir).mkdir(parents=True, exist_ok=True)
 

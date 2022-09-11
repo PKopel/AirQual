@@ -4,9 +4,8 @@ import pandas as pd
 from tqdm import tqdm
 from datetime import date
 
-SENSORS_FILE = './sensors_list.json'
-MEASUREMENTS_CSV = './measurements/all_measurements.csv'
-MEASUREMENTS_DIR = './measurements'
+SENSORS_FILE = './data/sensors_list.json'
+MEASUREMENTS_DIR = './data'
 COLUMNS = ["sensorId", "latitude", "longitude", "elevation", "fromDateTime", "tillDateTime",
            "PM1", "PM25", "PM10", "pressure", "humidity", "temperature", "wind_speed", "wind_bearing"]
 
@@ -81,7 +80,7 @@ def make_measurements_csv(measurements_dir):
 if (__name__ == "__main__"):
     quarter = (date.today().month-1)//3 + 1
     year = date.today().year
-    MEASUREMENTS_CSV = f'./measurements/q{quarter}_{year}_measurements.csv'
+    MEASUREMENTS_CSV = f'./data/csv/q{quarter}_{year}_measurements.csv'
     new_data = make_measurements_csv(f'{MEASUREMENTS_DIR}/raw')
 
     if os.path.exists(MEASUREMENTS_CSV):

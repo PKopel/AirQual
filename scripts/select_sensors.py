@@ -2,10 +2,10 @@ import json
 import datetime
 
 date = datetime.datetime.now()
-dir = f'measurements/{date.day}-{date.month}-{date.year}'
+dir = f'./data/{date.day}-{date.month}-{date.year}'
 
 
-with open('sensors_list.json', 'r') as f:
+with open('./data/sensors_list.json', 'r') as f:
     sensors = json.load(f)
 
 
@@ -25,7 +25,7 @@ def check_sensor(sensor: dict):
 sensors = list(filter(check_sensor, sensors))
 
 
-with open(f'sensors_list.json', 'w') as f:
+with open(f'./data/sensors_list.json', 'w') as f:
     json.dump(sensors, f, indent=4, sort_keys=True)
 
 print(len(sensors))

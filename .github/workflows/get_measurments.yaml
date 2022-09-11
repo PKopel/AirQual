@@ -22,7 +22,7 @@ jobs:
 
       - name: install dependencies
         run: |
-          python -m pip install -r requirements.txt
+          python -m pip install -r scripts/requirements.txt
 
       - name: setup API keys
         shell: bash
@@ -33,7 +33,7 @@ jobs:
 
       - name: execute py script # run the get_measurements.py to get the latest data
         run: |
-          python get_measurements.py
+          python scripts/get_measurements.py
 
       - name: commit changes
         run: |
@@ -43,20 +43,20 @@ jobs:
           git commit -m "Automated measurements commit"
           git push
 
-      - name: update all_measurements.csv
+      - name: update csv
         run: |
-          python generate_csv.py
+          python scripts/generate_csv.py
 
       - name: compress new raw data
         shell: bash
         run: |
-          ls -d measurements/raw/* | grep -v .tar.gz | xargs -I {} tar -zcf {}.tar.gz {}
-          ls -d measurements/raw/* | grep -v .tar.gz | xargs rm -rf
+          ls -d data/raw/* | grep -v .tar.gz | xargs -I {} tar -zcf {}.tar.gz {}
+          ls -d data/raw/* | grep -v .tar.gz | xargs rm -rf
 
       - name: commit changes
         run: |
           git config user.name 'github-action'
           git config user.email 'github-actions@github.com'
-          git add ./measurements
+          git add ./data
           git commit -m "Automated measurements commit"
           git push
