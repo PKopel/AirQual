@@ -1,0 +1,29 @@
+name: Build server image
+
+on:
+  workflow_dispatch:
+  # workflow_run:
+  #   workflows: ["Get measurements from Airly"]
+  #   types:
+  #     - completed
+
+jobs:
+  build_server_image:
+    name: Build server image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: pkopel/air-qual:latest

@@ -24,15 +24,17 @@ FROM python:3.10-slim-buster
 
 WORKDIR /app
 
-# copy sensor data
-COPY --chown=1001:1001 sensors_list.json . 
-COPY --chown=1001:1001 measurements/outer_sensors_per_sensor_importance.json ./importance.json
-
+# copy dependencies
 COPY --from=builder /usr/src/app/wheels /wheels
 COPY --from=builder /usr/src/app/requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache /wheels/*
 
+# copy sensor data
+COPY --chown=1001:1001 sensors_list.json . 
+COPY --chown=1001:1001 measurements/outer_sensors_per_sensor_importance.json ./importance.json
+
+# copy app
 COPY --chown=1001:1001 server/app.py app.py
 
 USER 1001
