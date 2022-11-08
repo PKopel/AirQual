@@ -1,18 +1,17 @@
+# -*- coding: utf-8 -*-
 # %%
-import time
 import math
 import json
 import glob
 import warnings
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import tensorflow as tf
-from tensorflow.keras.utils import to_categorical, Sequence
-from tensorflow.keras.optimizers import *
-from tensorflow.keras.callbacks import *
-from tensorflow.keras.layers import *
 from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
+from tensorflow.keras.callbacks import *
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.utils import to_categorical, Sequence
 from tqdm import tqdm
 from functools import lru_cache
 from scipy.interpolate import LinearNDInterpolator
@@ -28,6 +27,7 @@ dataset_path = 'all_measurements.csv'
 predict_columns = ["PM10"]
 cracow_center = 50.061868834110356, 19.937604241982864
 cracow_center_radius = 4  # km
+cracow_outer_radius = 8  # km
 center_latlong2km_conversion = (111.11, 71.43)
 test_valid_ratio = 4
 
@@ -169,7 +169,7 @@ all_data[Y_COLUMN] = y
 
 
 class DatasetNetworkIterator(Sequence):
-    def __init__(self, datetimes, df, target_columns, batch_size=64, inner_radius=2):
+    def __init__(self, datetimes, df, target_columns, batch_size=64, inner_radius=2, outer_radius=2):
         self.datetimes = shuffle(datetimes, random_state=SEED)
         self.datetimes_ids = np.array([i for i in range(len(self.datetimes))])
         self.batch_size = batch_size
@@ -193,7 +193,10 @@ class DatasetNetworkIterator(Sequence):
         self.inner_df = df[df[X_COLUMN]*df[X_COLUMN] +
                            df[Y_COLUMN]*df[Y_COLUMN] < inner_radius**2]
         self.outer_df = df[df[X_COLUMN]*df[X_COLUMN] +
-                           df[Y_COLUMN]*df[Y_COLUMN] >= inner_radius**2]
+                           df[Y_COLUMN]*df[Y_COLUMN] >= outer_radius**2]
+
+        print(f"outer_df size: {len(self.outer_df[SENSOR_ID].unique())}")
+        print(f"inner_df size: {len(self.inner_df[SENSOR_ID].unique())}")
 
     def __len__(self):
         return math.ceil(len(self.datetimes) // self.batch_size)
@@ -240,7 +243,7 @@ class DatasetNetworkIterator(Sequence):
 
         return ([batch_x_outer, batch_x_inner], batch_x_target)
 
-    def get_batch_sensors(self, idx):
+    def get_outer_batch_sensors(self, idx):
         batch_start = idx*self.batch_size
         batch_end = min((idx+1)*self.batch_size, len(self.datetimes))
 
@@ -249,6 +252,24 @@ class DatasetNetworkIterator(Sequence):
             outer_sensors.append(self.get_outer_states_sensors(dtid))
 
         return outer_sensors
+
+    def get_inner_batch_sensors(self, idx):
+        batch_start = idx*self.batch_size
+        batch_end = min((idx+1)*self.batch_size, len(self.datetimes))
+
+        inner_sensors = []
+        for dtid in self.datetimes_ids[batch_start:batch_end]:
+            inner_sensors.append(self.get_inner_states_sensors(dtid))
+
+        return inner_sensors
+
+    @lru_cache(maxsize=40000)
+    def get_inner_states_sensors(self, datetime_id):
+        records = self.get_inner_by_date(self.datetimes[datetime_id])
+        sensorIds = []
+        for _, record in records.iterrows():
+            sensorIds.append(record[SENSOR_ID])
+        return sensorIds
 
     @lru_cache(maxsize=40000)
     def get_outer_states_sensors(self, datetime_id):
@@ -355,7 +376,7 @@ def get_net(in_outer_size, in_inner_size):
     input_inner = Input(shape=(None, in_inner_size))
 
     outer_mask = input_outer[..., 0]
-    outer_mask = Dropout(0.1)(outer_mask)
+    outer_mask = Dropout(0.3)(outer_mask)
     inner_mask = input_inner[..., 0]
 
     inner_features = input_inner[..., 1:]
@@ -441,8 +462,7 @@ def get_net(in_outer_size, in_inner_size):
 
 model = get_net(20, 3)
 
-model.compile(optimizer=RMSprop(learning_rate=0.002),
-              loss=[loss_fn, dummy_loss])
+model.compile(optimizer=Adam(learning_rate=0.002), loss=[loss_fn, dummy_loss])
 
 model.summary()
 
@@ -464,16 +484,6 @@ class HistoryCallback(Callback):
         if "val_loss" in logs:
             self.history["val_loss"].append(logs["val_loss"])
         self.history["loss"].append(logs["loss"])
-        # if len(self.history["loss"]) > show_from:
-        #     plt.close('all')
-        #     plt.figure()
-        #     plt.plot(self.history["loss"][show_from:])
-        #     plt.plot(self.history["val_loss"][show_from:])
-        #     plt.legend(["loss", "val_loss"])
-        #     plt.yscale('log')
-        #     plt.show()
-        #     if self.epilepsy_protection:
-        #         time.sleep(0.5)
 
 
 # %%
@@ -579,7 +589,7 @@ all_data = all_data.append(new_records)
 
 # %%
 it = DatasetNetworkIterator(all_data[FROM_DATE_TIME].unique(), all_data, [
-                            PM10], inner_radius=cracow_center_radius, batch_size=1)
+                            PM10], inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius, batch_size=2)
 
 ins, outs = it[0]
 
@@ -604,15 +614,12 @@ print(f'test {len(test)}')
 
 batch_size = 64
 
-train_it = DatasetNetworkIterator(
-    train, all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius)
-valid_it = DatasetNetworkIterator(
-    valid, all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius)
-test_it = DatasetNetworkIterator(
-    test, all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius)
-
-
-# %%
+train_it = DatasetNetworkIterator(train, all_data, predict_columns, batch_size=batch_size,
+                                  inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius)
+valid_it = DatasetNetworkIterator(valid, all_data, predict_columns, batch_size=batch_size,
+                                  inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius)
+test_it = DatasetNetworkIterator(test, all_data, predict_columns, batch_size=batch_size,
+                                 inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius)
 
 # comment out if you want to keep history when rerunning
 cb1 = HistoryCallback(epilepsy_protection=False)
@@ -626,13 +633,17 @@ hist = model.fit(train_it,
                  verbose=1,
                  callbacks=callbacks)
 
+model.save("model.h5")
 
-# %%
+model.load("model.h5")
+
+# AVERAGE SENSOR WEIGHTS
+
 
 batch_size = 64
 
 all_it = DatasetNetworkIterator(all_data[FROM_DATE_TIME].unique(
-), all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius)
+), all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius)
 
 outer_sensor_importance = dict()
 
@@ -648,7 +659,7 @@ for i in tqdm(range(len(all_it))):
 
     out = model.predict(net_input)
     sensor_weights = out[1]
-    sensor_ids = all_it.get_batch_sensors(i)
+    sensor_ids = all_it.get_outer_batch_sensors(i)
 
     for j in range(sensor_weights.shape[0]):
         for k, sensor_id in enumerate(sensor_ids[j]):
@@ -661,9 +672,6 @@ for i in tqdm(range(len(all_it))):
                     outer_sensor_importance[sensor_id].append(
                         sensor_weights[j, k, l, 0])
 
-with open('data/outer_sensors_per_sensor_importance.json', 'w') as outfile:
-    json.dump(outer_sensor_importance, outfile)
-
 average_outer_sensor_importance = dict()
 
 for sens_id, values in outer_sensor_importance.items():
@@ -673,18 +681,54 @@ for sens_id, values in outer_sensor_importance.items():
 with open('data/outer_sensors_importance.json', 'w') as outfile:
     json.dump(average_outer_sensor_importance, outfile)
 
+# PER SENSOR WEIGHTS
 
-# %%
-# network normalization histogram
 
-all = []
+batch_size = 64
 
-for i in range(len(train_it)):
-    batch = train_it[i][1]
+all_it = DatasetNetworkIterator(all_data[FROM_DATE_TIME].unique(
+), all_data, predict_columns, batch_size=batch_size, inner_radius=cracow_center_radius, outer_radius=cracow_outer_radius)
 
-    for j in range(batch.shape[0]):
-        for k in range(batch.shape[1]):
-            all.append(batch[j, k, 1])
+inner_sensor_importance = dict()
 
-all = np.array(all)
-plt.hist(all)
+for i in tqdm(range(len(all_it))):                # for batch in dataset
+    # for i in range(1):
+
+    net_input = all_it[i][0]
+    net_input_outer = net_input[0]
+    net_input_inner = net_input[1]
+
+    inner_mask = net_input_inner[:, :, 0]
+    outer_mask = net_input_outer[:, :, 0]
+
+    out = model.predict(net_input)
+    sensor_weights = out[1]
+    outer_sensor_ids = all_it.get_outer_batch_sensors(i)
+    inner_sensor_ids = all_it.get_inner_batch_sensors(i)
+
+    for j in range(sensor_weights.shape[0]):  # for sample in batch
+        # for outer sensor in sample
+        for k, outer_sensor_id in enumerate(outer_sensor_ids[j]):
+            # for inner sensor importance
+            for l, inner_sensor_id in enumerate(inner_sensor_ids[j]):
+
+                if inner_sensor_id not in inner_sensor_importance:
+                    inner_sensor_importance[inner_sensor_id] = dict()
+
+                if outer_sensor_id not in inner_sensor_importance[inner_sensor_id]:
+                    inner_sensor_importance[inner_sensor_id][outer_sensor_id] = [
+                    ]
+                else:
+                    inner_sensor_importance[inner_sensor_id][outer_sensor_id].append(
+                        sensor_weights[j, k, l, 0])
+
+average_outer_sensor_importance = dict()
+
+for inner_sens_id, outer_importances in inner_sensor_importance.items():
+    average_outer_sensor_importance[inner_sens_id] = dict()
+    for outer_sens_id, importance_values in outer_importances.items():
+        average_outer_sensor_importance[inner_sens_id][outer_sens_id] = np.mean(
+            np.array(importance_values)).item()
+
+with open('data/outer_sensors_per_sensor_importance.json', 'w') as outfile:
+    json.dump(average_outer_sensor_importance, outfile)
