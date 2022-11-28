@@ -2,10 +2,10 @@ name: Plot charts
 
 on:
   workflow_dispatch:
-  # workflow_run:
-  #   workflows: ["Get measurements from Airly"]
-  #   types:
-  #     - completed
+  workflow_run:
+    workflows: ["Get measurements from Airly"]
+    types:
+      - completed
 
 jobs:
   get_measurements:
