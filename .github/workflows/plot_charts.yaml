@@ -19,7 +19,8 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8 #install the python needed
+          python-version: '3.8'
+          cache: 'pip'
 
       - name: install dependencies
         run: |
