@@ -51,6 +51,7 @@ jobs:
         shell: bash
         run: |
           ls -d measurements/raw/* | grep -v .tar.gz | xargs -I {} tar -zcf {}.tar.gz {}
+          ls -d measurements/raw/* | grep -v .tar.gz | xargs -I {} sh -c 'cat {}.tar.gz >> $(echo {} | sed "s|\/[0-9]*-|/|g").tar.gz && rm {}.tar.gz'
           ls -d measurements/raw/* | grep -v .tar.gz | xargs rm -rf
 
       - name: commit changes
