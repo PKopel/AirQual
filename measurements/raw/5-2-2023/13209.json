@@ -1,0 +1,958 @@
+{
+    "current": {
+        "fromDateTime": "2023-02-05T21:12:18.179Z",
+        "indexes": [
+            {
+                "advice": null,
+                "color": "#999999",
+                "description": "Unfortunately sensor in this location has been probably disconnected from power.",
+                "level": "UNKNOWN",
+                "name": "AIRLY_CAQI",
+                "value": null
+            }
+        ],
+        "standards": [],
+        "tillDateTime": "2023-02-05T22:12:18.179Z",
+        "values": []
+    },
+    "forecast": [
+        {
+            "fromDateTime": "2023-02-05T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Watch out - a few signs of smog today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 52.41
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 216.06,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 74.0,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-05T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 32.41
+                },
+                {
+                    "name": "PM10",
+                    "value": 33.3
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-05T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Take a breath!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 46.53
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 186.12,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 70.24,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-06T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 27.92
+                },
+                {
+                    "name": "PM10",
+                    "value": 31.61
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-06T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Enjoy the clean air.",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 38.86
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 155.41,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 69.85,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-06T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 23.31
+                },
+                {
+                    "name": "PM10",
+                    "value": 31.43
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-06T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Don't miss this day! The clean air calls!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 34.95
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 139.77,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 71.12,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-06T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 20.97
+                },
+                {
+                    "name": "PM10",
+                    "value": 32.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-06T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Yes, yes - it's true. The air quality is good today!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 34.19
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 136.75,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 71.3,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-06T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 20.51
+                },
+                {
+                    "name": "PM10",
+                    "value": 32.09
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-06T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T04:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T05:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T06:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T07:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T08:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T09:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T10:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T11:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T12:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T13:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T14:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T15:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T16:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T17:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T18:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T19:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T20:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T21:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-06T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-06T22:00:00.000Z",
+            "values": []
+        }
+    ],
+    "history": [
+        {
+            "fromDateTime": "2023-02-04T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe deeply!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 11.12
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 44.47,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 16.52,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-02-04T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.94
+                },
+                {
+                    "name": "PM25",
+                    "value": 6.67
+                },
+                {
+                    "name": "PM10",
+                    "value": 7.44
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1029.59
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 78.6
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -4.51
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 15.77
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 348.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-02-04T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T00:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T01:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T02:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T03:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T04:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T05:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T06:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T07:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T08:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T09:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T10:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T11:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T12:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T13:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T14:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T15:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T16:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T17:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T18:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T19:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T20:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T21:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-02-05T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-02-05T22:00:00.000Z",
+            "values": []
+        }
+    ]
+}
