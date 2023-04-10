@@ -450,6 +450,7 @@ def h_anim_map():
     mtypes = [PM1, PM10, PM25, HUMIDITY]
     df = measurements_df[np.logical_and(
         pd.notna(measurements_df[LONGITUDE]), pd.notna(measurements_df[LATITUDE]))]
+    df.drop([DATE], axis=1, inplace=True)
     df = df.groupby([HOUR], dropna=True)
 
     cracow_im = cv.imread('./charts/cracow.png')
