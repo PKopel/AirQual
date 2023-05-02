@@ -477,9 +477,9 @@ def h_anim_map():
             plt.savefig(f'{anim_dump_dir}/{mtype}_avg_by_h_{i}.png', dpi=100)
             plt.close('all')
 
-        with imageio.get_writer(f'./charts/{mtype}_avg_by_h.gif', mode='I', fps=4) as writer:
+        with imageio.get_writer(f'./charts/{mtype}_avg_by_h.gif', mode='I', duration=250) as writer:
             for filename in [f'{anim_dump_dir}/{mtype}_avg_by_h_{i}.png' for i in range(24)]:
-                image = imageio.imread(filename)
+                image = imageio.v2.imread(filename)
                 writer.append_data(image)
 
 
