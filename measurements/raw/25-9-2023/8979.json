@@ -1,0 +1,1666 @@
+{
+    "current": {
+        "fromDateTime": "2023-09-25T21:12:36.645Z",
+        "indexes": [
+            {
+                "advice": null,
+                "color": "#999999",
+                "description": "This sensor is not working. Please try another sensor nearby.",
+                "level": "UNKNOWN",
+                "name": "AIRLY_CAQI",
+                "value": null
+            }
+        ],
+        "standards": [],
+        "tillDateTime": "2023-09-25T22:12:36.645Z",
+        "values": [
+            {
+                "name": "PRESSURE",
+                "value": 1026.43
+            },
+            {
+                "name": "HUMIDITY",
+                "value": 95.0
+            },
+            {
+                "name": "TEMPERATURE",
+                "value": 15.39
+            },
+            {
+                "name": "WIND_SPEED",
+                "value": 9.54
+            },
+            {
+                "name": "WIND_BEARING",
+                "value": 93.09
+            }
+        ]
+    },
+    "forecast": [
+        {
+            "fromDateTime": "2023-09-25T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air quality is beyond awful today.",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 199.71
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 339.21,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 1197.64,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-25T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 50.88
+                },
+                {
+                    "name": "PM10",
+                    "value": 538.94
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you air your home today, you're actually polluting it. Close those windows!",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 192.84
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 234.26,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 1142.7,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.14
+                },
+                {
+                    "name": "PM10",
+                    "value": 514.22
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's definitely not a good day to be outside.",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 181.41
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 186.43,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 1051.22,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 27.96
+                },
+                {
+                    "name": "PM10",
+                    "value": 473.05
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "We have very high levels of air pollution today. :(",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 167.8
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 187.63,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 942.37,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 28.14
+                },
+                {
+                    "name": "PM10",
+                    "value": 424.06
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The day was going to be the best ever, but it turned out ghastly. :(",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 149.46
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 333.95,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 795.66,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 50.09
+                },
+                {
+                    "name": "PM10",
+                    "value": 358.05
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The day was going to be the best ever, but it turned out ghastly. :(",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 141.59
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 465.76,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 732.68,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 69.86
+                },
+                {
+                    "name": "PM10",
+                    "value": 329.71
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Save yourselves! That's the worst it could be!",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 131.62
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 497.56,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 652.94,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 74.63
+                },
+                {
+                    "name": "PM10",
+                    "value": 293.82
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "This air condition may be dangerous for your health!",
+                    "color": "#B00057",
+                    "description": "Very high pollution!",
+                    "level": "EXTREME",
+                    "name": "AIRLY_CAQI",
+                    "value": 123.43
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 533.59,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 587.4,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 80.04
+                },
+                {
+                    "name": "PM10",
+                    "value": 264.33
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is heavily polluted. Children, the elderly and pregnant women are particularly vulnerable to the unhealthy effects of smog.",
+                    "color": "#B00057",
+                    "description": "Very high pollution!",
+                    "level": "EXTREME",
+                    "name": "AIRLY_CAQI",
+                    "value": 117.43
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 582.99,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 539.4,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-26T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 87.45
+                },
+                {
+                    "name": "PM10",
+                    "value": 242.73
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-26T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T08:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T09:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T10:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T11:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T12:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T13:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T14:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T15:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T16:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T17:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T18:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T19:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T20:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T21:00:00.000Z",
+            "values": []
+        },
+        {
+            "fromDateTime": "2023-09-26T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately forecast for this hour is not ready yet.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-26T22:00:00.000Z",
+            "values": []
+        }
+    ],
+    "history": [
+        {
+            "fromDateTime": "2023-09-24T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Great air!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 8.58
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 34.3,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 15.49,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-24T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.52
+                },
+                {
+                    "name": "PM25",
+                    "value": 5.15
+                },
+                {
+                    "name": "PM10",
+                    "value": 6.97
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.26
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.75
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.83
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 8.33
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 47.09
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-24T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is grand today. ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 10.71
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 42.81,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 18.66,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-25T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 4.77
+                },
+                {
+                    "name": "PM25",
+                    "value": 6.42
+                },
+                {
+                    "name": "PM10",
+                    "value": 8.39
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1025.98
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.81
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.7
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.25
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 48.26
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Dear me, how wonderful!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 18.68
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 74.7,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 32.46,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-25T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 9.0
+                },
+                {
+                    "name": "PM25",
+                    "value": 11.21
+                },
+                {
+                    "name": "PM10",
+                    "value": 14.61
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1025.89
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.64
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.66
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.74
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 51.71
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe to fill your lungs!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 18.75
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 74.99,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 33.28,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-25T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 8.11
+                },
+                {
+                    "name": "PM25",
+                    "value": 11.25
+                },
+                {
+                    "name": "PM10",
+                    "value": 14.98
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1025.62
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 85.48
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.47
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 10.45
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 59.5
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If possible, stay at home. A longer stay outside can affect your health.",
+                    "color": "#770078",
+                    "description": "Extremely high pollution!",
+                    "level": "AIRMAGEDDON",
+                    "name": "AIRLY_CAQI",
+                    "value": 371.78
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 4719.33,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 1980.87,
+                    "pollutant": "PM10"
+                }
+            ],
+            "tillDateTime": "2023-09-25T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 706.12
+                },
+                {
+                    "name": "PM25",
+                    "value": 707.9
+                },
+                {
+                    "name": "PM10",
+                    "value": 891.39
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1025.51
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 69.68
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.66
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 10.5
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 65.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1025.73
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 89.14
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 13.02
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 11.23
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 65.35
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.0
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 73.48
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.7
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 11.86
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 69.42
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.24
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 93.31
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 12.96
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 12.02
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 74.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.44
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 13.2
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 14.25
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 75.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T08:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.53
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 70.82
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 14.16
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 16.55
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 77.78
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T09:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.65
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 65.72
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 14.64
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 16.89
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 80.57
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T10:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.56
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 72.02
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 15.72
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 17.4
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 88.49
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T11:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.44
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 87.25
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 16.61
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 17.07
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 91.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T12:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.39
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 85.0
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 17.42
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 17.0
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 90.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T13:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.15
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 82.75
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 18.15
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 16.38
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 90.74
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T14:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.3
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 82.56
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 18.24
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 15.9
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 91.75
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T15:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.38
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 78.57
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 18.14
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 15.0
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 89.3
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T16:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.36
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 60.12
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 17.82
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 13.37
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 81.85
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T17:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.36
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 63.87
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 17.21
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 12.03
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 76.61
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T18:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.48
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 80.27
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 16.84
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 11.13
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 76.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T19:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.66
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.34
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 16.06
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.32
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 80.5
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T20:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.77
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.06
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 15.86
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.25
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 83.54
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T21:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.56
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.69
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 15.71
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.4
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 87.33
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-09-25T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": null,
+                    "color": "#999999",
+                    "description": "Unfortunately this sensor was probably disconnected at that time. We don't have the data for this hour.",
+                    "level": "UNKNOWN",
+                    "name": "AIRLY_CAQI",
+                    "value": null
+                }
+            ],
+            "standards": [],
+            "tillDateTime": "2023-09-25T22:00:00.000Z",
+            "values": [
+                {
+                    "name": "PRESSURE",
+                    "value": 1026.5
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.81
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 15.46
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.38
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 91.53
+                }
+            ]
+        }
+    ]
+}
