@@ -1,0 +1,2566 @@
+{
+    "current": {
+        "fromDateTime": "2023-12-01T21:13:03.622Z",
+        "indexes": [
+            {
+                "advice": "Avoid being outside if possible.",
+                "color": "#EF7120",
+                "description": "Poor air quality!",
+                "level": "HIGH",
+                "name": "AIRLY_CAQI",
+                "value": 77.2
+            }
+        ],
+        "standards": [
+            {
+                "averaging": "24h",
+                "limit": 45.0,
+                "name": "WHO",
+                "percent": 164.39,
+                "pollutant": "PM10"
+            },
+            {
+                "averaging": "24h",
+                "limit": 15.0,
+                "name": "WHO",
+                "percent": 398.86,
+                "pollutant": "PM25"
+            }
+        ],
+        "tillDateTime": "2023-12-01T22:13:03.622Z",
+        "values": [
+            {
+                "name": "PM1",
+                "value": 33.93
+            },
+            {
+                "name": "PM25",
+                "value": 59.83
+            },
+            {
+                "name": "PM10",
+                "value": 73.97
+            },
+            {
+                "name": "PRESSURE",
+                "value": 1002.79
+            },
+            {
+                "name": "HUMIDITY",
+                "value": 95.25
+            },
+            {
+                "name": "TEMPERATURE",
+                "value": -1.93
+            },
+            {
+                "name": "WIND_SPEED",
+                "value": 13.62
+            },
+            {
+                "name": "WIND_BEARING",
+                "value": 64.0
+            }
+        ]
+    },
+    "forecast": [
+        {
+            "fromDateTime": "2023-12-01T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you must go out today, a smog mask would be wise!",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 75.37
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 166.04,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 372.09,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 55.81
+                },
+                {
+                    "name": "PM10",
+                    "value": 74.72
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you can, stay home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 70.0
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 159.32,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 333.31,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 50.0
+                },
+                {
+                    "name": "PM10",
+                    "value": 71.69
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Sadly, the air is not quite as clean as it looks today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 64.72
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 150.84,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 298.11,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 44.72
+                },
+                {
+                    "name": "PM10",
+                    "value": 67.88
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 60.82
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 143.55,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 272.07,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 40.81
+                },
+                {
+                    "name": "PM10",
+                    "value": 64.6
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 58.26
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 137.22,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 255.06,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 38.26
+                },
+                {
+                    "name": "PM10",
+                    "value": 61.75
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Protect your lungs!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 56.46
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 130.66,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 243.06,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 36.46
+                },
+                {
+                    "name": "PM10",
+                    "value": 58.8
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Watch out - a few signs of smog today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 55.33
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 126.0,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 235.48,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.32
+                },
+                {
+                    "name": "PM10",
+                    "value": 56.7
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 55.23
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 125.52,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 234.84,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.23
+                },
+                {
+                    "name": "PM10",
+                    "value": 56.49
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Protect your lungs!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 55.34
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 123.07,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 235.6,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.34
+                },
+                {
+                    "name": "PM10",
+                    "value": 55.38
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Things were good once... Let's hope it doesn't get worse!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.39
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 119.74,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 229.21,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T08:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.38
+                },
+                {
+                    "name": "PM10",
+                    "value": 53.88
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air doesn't encourage walking today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.45
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 120.15,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 229.66,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T09:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.45
+                },
+                {
+                    "name": "PM10",
+                    "value": 54.07
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's better to limit your outside physical activity today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.6
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 119.61,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 230.62,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T10:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.59
+                },
+                {
+                    "name": "PM10",
+                    "value": 53.82
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The smog is coming! :O",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.27
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 119.63,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 228.41,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T11:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.26
+                },
+                {
+                    "name": "PM10",
+                    "value": 53.83
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's better to limit your outside physical activity today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.58
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 118.37,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 230.51,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T12:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.58
+                },
+                {
+                    "name": "PM10",
+                    "value": 53.27
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air doesn't encourage walking today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 55.46
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 118.02,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 236.38,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T13:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.46
+                },
+                {
+                    "name": "PM10",
+                    "value": 53.11
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Watch out - a few signs of smog today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 57.04
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 121.8,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 246.9,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T14:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 37.04
+                },
+                {
+                    "name": "PM10",
+                    "value": 54.81
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Neither good nor bad. Think before leaving the house.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 58.74
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 125.62,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 258.24,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T15:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 38.74
+                },
+                {
+                    "name": "PM10",
+                    "value": 56.53
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The smog is coming! :O",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 59.73
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 127.2,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 264.85,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T16:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 39.73
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.24
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Things were good once... Let's hope it doesn't get worse!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 59.81
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 128.01,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 265.39,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T17:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 39.81
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.61
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's better to limit your outside physical activity today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 61.0
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 128.41,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 273.33,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T18:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 41.0
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.78
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 61.07
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 128.05,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 273.8,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T19:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 41.07
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.62
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you can, stay home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 60.08
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 127.08,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 267.16,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T20:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 40.07
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.19
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "This isn't the best day for out-of-home activities.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 57.47
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 120.5,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 249.79,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T21:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 37.47
+                },
+                {
+                    "name": "PM10",
+                    "value": 54.22
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-02T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's better to limit your outside physical activity today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 55.32
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 113.85,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 235.4,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-02T22:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 35.31
+                },
+                {
+                    "name": "PM10",
+                    "value": 51.23
+                }
+            ]
+        }
+    ],
+    "history": [
+        {
+            "fromDateTime": "2023-11-30T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Sadly, the air is not quite as clean as it looks today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 74.87
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 153.52,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 365.8,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-11-30T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 31.82
+                },
+                {
+                    "name": "PM25",
+                    "value": 54.87
+                },
+                {
+                    "name": "PM10",
+                    "value": 69.09
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.41
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.6
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 1.36
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 82.33
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-11-30T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 65.73
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 127.05,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 304.84,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 26.58
+                },
+                {
+                    "name": "PM25",
+                    "value": 45.73
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.17
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.32
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.5
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 1.53
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 52.08
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 62.37
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 116.94,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 282.42,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 24.94
+                },
+                {
+                    "name": "PM25",
+                    "value": 42.36
+                },
+                {
+                    "name": "PM10",
+                    "value": 52.62
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.36
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.49
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.22
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 95.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Neither good nor bad. Think before leaving the house.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 64.16
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 121.86,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 294.4,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 26.2
+                },
+                {
+                    "name": "PM25",
+                    "value": 44.16
+                },
+                {
+                    "name": "PM10",
+                    "value": 54.84
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.58
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 93.19
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.71
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.4
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 160.84
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Watch out - a few signs of smog today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 60.07
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 111.71,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 267.13,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 23.75
+                },
+                {
+                    "name": "PM25",
+                    "value": 40.07
+                },
+                {
+                    "name": "PM10",
+                    "value": 50.27
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.62
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 93.92
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.74
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 1.88
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 358.34
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 64.35
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 122.96,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 295.6,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 26.11
+                },
+                {
+                    "name": "PM25",
+                    "value": 44.34
+                },
+                {
+                    "name": "PM10",
+                    "value": 55.33
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.76
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.68
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.82
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 1.97
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 18.75
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Protect your lungs!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 69.03
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 136.15,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 326.86,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 28.8
+                },
+                {
+                    "name": "PM25",
+                    "value": 49.03
+                },
+                {
+                    "name": "PM10",
+                    "value": 61.27
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.71
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.75
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -2.08
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.39
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 45.29
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Things were good once... Let's hope it doesn't get worse!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 66.17
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 127.28,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 307.77,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 27.18
+                },
+                {
+                    "name": "PM25",
+                    "value": 46.17
+                },
+                {
+                    "name": "PM10",
+                    "value": 57.28
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1000.9
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 96.13
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -2.4
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.76
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 86.16
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Things were good once... Let's hope it doesn't get worse!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 63.44
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 120.9,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 289.57,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 25.7
+                },
+                {
+                    "name": "PM25",
+                    "value": 43.44
+                },
+                {
+                    "name": "PM10",
+                    "value": 54.41
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1001.27
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 95.56
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -2.47
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.7
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 96.3
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air doesn't encourage walking today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 68.22
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 133.16,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 321.42,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T08:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 28.42
+                },
+                {
+                    "name": "PM25",
+                    "value": 48.21
+                },
+                {
+                    "name": "PM10",
+                    "value": 59.92
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1001.5
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.81
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.95
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 1.92
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 85.5
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 69.88
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 136.4,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 332.52,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T09:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 30.2
+                },
+                {
+                    "name": "PM25",
+                    "value": 49.88
+                },
+                {
+                    "name": "PM10",
+                    "value": 61.38
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1001.82
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 93.38
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.11
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.85
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 73.6
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 70.19
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 135.8,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 334.58,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T10:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 30.79
+                },
+                {
+                    "name": "PM25",
+                    "value": 50.19
+                },
+                {
+                    "name": "PM10",
+                    "value": 61.11
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.09
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.19
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -0.31
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 2.8
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 66.61
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Protect your lungs!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 58.91
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 108.32,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 259.35,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T11:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 23.56
+                },
+                {
+                    "name": "PM25",
+                    "value": 38.9
+                },
+                {
+                    "name": "PM10",
+                    "value": 48.74
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.02
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 90.31
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 0.04
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 3.82
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 58.48
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 59.22
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 110.0,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 261.41,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T12:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 23.47
+                },
+                {
+                    "name": "PM25",
+                    "value": 39.21
+                },
+                {
+                    "name": "PM10",
+                    "value": 49.5
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1001.83
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 89.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 0.32
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 4.56
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 55.86
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Neither good nor bad. Think before leaving the house.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 61.63
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 116.39,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 277.53,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T13:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 24.58
+                },
+                {
+                    "name": "PM25",
+                    "value": 41.63
+                },
+                {
+                    "name": "PM10",
+                    "value": 52.38
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.0
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 88.94
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 0.72
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 6.13
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 54.77
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Sadly, the air is not quite as clean as it looks today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 69.2
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 134.0,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 327.96,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T14:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 30.32
+                },
+                {
+                    "name": "PM25",
+                    "value": 49.19
+                },
+                {
+                    "name": "PM10",
+                    "value": 60.3
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.14
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 90.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": 0.4
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 6.72
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 57.57
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Sadly, the air is not quite as clean as it looks today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 74.79
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 148.49,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 365.23,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T15:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 32.34
+                },
+                {
+                    "name": "PM25",
+                    "value": 54.78
+                },
+                {
+                    "name": "PM10",
+                    "value": 66.82
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.55
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 91.88
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -0.23
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 7.83
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 60.18
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you must go out today, a smog mask would be wise!",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 76.17
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 156.64,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 383.71,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T16:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 33.36
+                },
+                {
+                    "name": "PM25",
+                    "value": 57.56
+                },
+                {
+                    "name": "PM10",
+                    "value": 70.49
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.62
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 92.63
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -0.52
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 8.41
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 60.83
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Dust particles are suspended in the air. Watch out!",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 75.96
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 156.01,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 380.61,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T17:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 32.9
+                },
+                {
+                    "name": "PM25",
+                    "value": 57.09
+                },
+                {
+                    "name": "PM10",
+                    "value": 70.2
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.82
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 93.5
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -0.96
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 8.81
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 60.55
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Avoid being outside if possible.",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 78.02
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 168.05,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 410.86,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T18:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 35.28
+                },
+                {
+                    "name": "PM25",
+                    "value": 61.63
+                },
+                {
+                    "name": "PM10",
+                    "value": 75.62
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1003.01
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.75
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.21
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.78
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 62.82
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Instead of running outdoors, how about a treadmill instead?.",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 78.27
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 170.32,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 414.54,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T19:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 35.12
+                },
+                {
+                    "name": "PM25",
+                    "value": 62.18
+                },
+                {
+                    "name": "PM10",
+                    "value": 76.64
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1003.25
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.69
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.33
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 10.49
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 62.45
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Careful! Dust is hanging over the city.",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 80.09
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 181.3,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 441.31,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T20:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 37.33
+                },
+                {
+                    "name": "PM25",
+                    "value": 66.2
+                },
+                {
+                    "name": "PM10",
+                    "value": 81.58
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1003.2
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.13
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.27
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 11.41
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 66.57
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Keep your windows closed today!",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 78.55
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 171.96,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 418.66,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T21:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 35.28
+                },
+                {
+                    "name": "PM25",
+                    "value": 62.8
+                },
+                {
+                    "name": "PM10",
+                    "value": 77.38
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1003.33
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 95.44
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.53
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 11.96
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 62.19
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2023-12-01T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "If you must go out today, a smog mask would be wise!",
+                    "color": "#EF7120",
+                    "description": "Poor air quality!",
+                    "level": "HIGH",
+                    "name": "AIRLY_CAQI",
+                    "value": 77.33
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 164.93,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 400.77,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2023-12-01T22:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 34.11
+                },
+                {
+                    "name": "PM25",
+                    "value": 60.12
+                },
+                {
+                    "name": "PM10",
+                    "value": 74.22
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1002.95
+                },
+                {
+                    "name": "HUMIDITY",
+                    "value": 94.88
+                },
+                {
+                    "name": "TEMPERATURE",
+                    "value": -1.81
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 13.41
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 64.0
+                }
+            ]
+        }
+    ]
+}
