@@ -1,0 +1,2916 @@
+{
+    "current": {
+        "fromDateTime": "2024-10-14T21:17:58.218Z",
+        "indexes": [
+            {
+                "advice": "Something's hanging in the air. Take care!",
+                "color": "#EFBB0F",
+                "description": "The air quality is average.",
+                "level": "MEDIUM",
+                "name": "AIRLY_CAQI",
+                "value": 56.84
+            }
+        ],
+        "standards": [
+            {
+                "averaging": "8h",
+                "limit": 100.0,
+                "name": "WHO",
+                "percent": 8.92,
+                "pollutant": "O3"
+            },
+            {
+                "averaging": "24h",
+                "limit": 45.0,
+                "name": "WHO",
+                "percent": 109.16,
+                "pollutant": "PM10"
+            },
+            {
+                "averaging": "24h",
+                "limit": 25.0,
+                "name": "WHO",
+                "percent": 134.97,
+                "pollutant": "NO2"
+            },
+            {
+                "averaging": "24h",
+                "limit": 15.0,
+                "name": "WHO",
+                "percent": 245.57,
+                "pollutant": "PM25"
+            }
+        ],
+        "tillDateTime": "2024-10-14T22:17:58.218Z",
+        "values": [
+            {
+                "name": "PM1",
+                "value": 23.61
+            },
+            {
+                "name": "PM25",
+                "value": 36.84
+            },
+            {
+                "name": "PM10",
+                "value": 49.12
+            },
+            {
+                "name": "PRESSURE",
+                "value": 1017.78
+            },
+            {
+                "name": "NO2",
+                "value": 33.74
+            },
+            {
+                "name": "O3",
+                "value": 8.92
+            },
+            {
+                "name": "WIND_SPEED",
+                "value": 4.49
+            },
+            {
+                "name": "WIND_BEARING",
+                "value": 234.88
+            }
+        ]
+    },
+    "forecast": [
+        {
+            "fromDateTime": "2024-10-14T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.97
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 105.03,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 233.07,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-14T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 34.96
+                },
+                {
+                    "name": "PM10",
+                    "value": 47.26
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It's better to limit your outside physical activity today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 53.06
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 98.16,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 220.34,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 33.05
+                },
+                {
+                    "name": "PM10",
+                    "value": 44.17
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The smog is coming! :O",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 50.81
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 90.3,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 205.37,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 30.81
+                },
+                {
+                    "name": "PM10",
+                    "value": 40.64
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Don't miss this day! The clean air calls!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 45.89
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 85.11,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 183.53,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 27.53
+                },
+                {
+                    "name": "PM10",
+                    "value": 38.3
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Take a breath!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 41.85
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 79.87,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 167.37,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 25.1
+                },
+                {
+                    "name": "PM10",
+                    "value": 35.94
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Take a deep breath. Today, you can. ;)",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 38.81
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 77.27,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 155.21,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 23.28
+                },
+                {
+                    "name": "PM10",
+                    "value": 34.77
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Yes, yes - it's true. The air quality is good today!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 37.44
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 75.29,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 149.75,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 22.46
+                },
+                {
+                    "name": "PM10",
+                    "value": 33.88
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Take a deep breath. Today, you can. ;)",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 33.14
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 71.83,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 132.54,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 19.88
+                },
+                {
+                    "name": "PM10",
+                    "value": 32.32
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air quality is good today!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 27.82
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 60.02,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 111.25,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 16.69
+                },
+                {
+                    "name": "PM10",
+                    "value": 27.01
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It couldn't be better ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 23.85
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 42.82,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 95.38,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T08:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 14.31
+                },
+                {
+                    "name": "PM10",
+                    "value": 19.27
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green, green, green!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 20.45
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 27.83,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 81.8,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T09:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 12.27
+                },
+                {
+                    "name": "PM10",
+                    "value": 12.52
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Catch your breath!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 15.12
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 24.8,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 60.45,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T10:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 9.07
+                },
+                {
+                    "name": "PM10",
+                    "value": 11.16
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green, green, green!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 12.25
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 23.64,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 49.0,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T11:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 7.35
+                },
+                {
+                    "name": "PM10",
+                    "value": 10.64
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green equals clean!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 11.69
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 24.31,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 46.72,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T12:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 7.01
+                },
+                {
+                    "name": "PM10",
+                    "value": 10.94
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe deep! The air is clean!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 11.4
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 24.83,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 45.58,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T13:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 6.84
+                },
+                {
+                    "name": "PM10",
+                    "value": 11.17
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Dear me, how wonderful!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 12.95
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 28.76,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 51.62,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T14:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 7.74
+                },
+                {
+                    "name": "PM10",
+                    "value": 12.94
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green, green, green!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 19.07
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 39.16,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 76.25,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T15:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 11.44
+                },
+                {
+                    "name": "PM10",
+                    "value": 17.62
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Yes, yes - it's true. The air quality is good today!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 35.85
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 54.3,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 143.36,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T16:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 21.5
+                },
+                {
+                    "name": "PM10",
+                    "value": 24.43
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air doesn't encourage walking today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 53.91
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 78.75,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 226.05,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T17:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 33.91
+                },
+                {
+                    "name": "PM10",
+                    "value": 35.44
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 63.52
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 109.61,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 290.08,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T18:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 43.51
+                },
+                {
+                    "name": "PM10",
+                    "value": 49.32
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Sadly, the air is not quite as clean as it looks today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 69.39
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 129.5,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 329.2,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T19:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 49.38
+                },
+                {
+                    "name": "PM10",
+                    "value": 58.27
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Try to stay with your family at home.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 73.67
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 141.06,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 357.8,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T20:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 53.67
+                },
+                {
+                    "name": "PM10",
+                    "value": 63.48
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The smog is coming! :O",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 74.29
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 145.57,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 361.93,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T21:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 54.29
+                },
+                {
+                    "name": "PM10",
+                    "value": 65.51
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-15T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Protect your lungs!",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 73.62
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 143.96,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 357.41,
+                    "pollutant": "PM25"
+                }
+            ],
+            "tillDateTime": "2024-10-15T22:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM25",
+                    "value": 53.61
+                },
+                {
+                    "name": "PM10",
+                    "value": 64.78
+                }
+            ]
+        }
+    ],
+    "history": [
+        {
+            "fromDateTime": "2024-10-13T22:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It couldn't be better ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 7.16
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 73.83,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 11.6,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 28.64,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 112.02,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-13T23:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.04
+                },
+                {
+                    "name": "PM25",
+                    "value": 4.3
+                },
+                {
+                    "name": "PM10",
+                    "value": 5.22
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1014.14
+                },
+                {
+                    "name": "NO2",
+                    "value": 28.0
+                },
+                {
+                    "name": "O3",
+                    "value": 73.83
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 23.16
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 255.03
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-13T23:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green equals clean!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.13
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 75.2,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 9.87,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 24.52,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 115.52,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T00:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.67
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.68
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.44
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1014.47
+                },
+                {
+                    "name": "NO2",
+                    "value": 28.88
+                },
+                {
+                    "name": "O3",
+                    "value": 75.2
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 24.5
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 256.51
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T00:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Green equals clean!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.49
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 72.39,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.27,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 25.92,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 114.62,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T01:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.86
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.89
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.62
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1014.85
+                },
+                {
+                    "name": "NO2",
+                    "value": 28.65
+                },
+                {
+                    "name": "O3",
+                    "value": 72.39
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 25.12
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 258.51
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T01:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe to fill your lungs!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.18
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 76.42,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 9.87,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 24.69,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 120.67,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T02:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.72
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.7
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.44
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1015.26
+                },
+                {
+                    "name": "NO2",
+                    "value": 30.17
+                },
+                {
+                    "name": "O3",
+                    "value": 76.42
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 25.23
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 260.5
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T02:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Zero dust - zero worries!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.46
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 72.21,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.19,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 25.84,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 120.91,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T03:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.75
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.88
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.59
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1015.58
+                },
+                {
+                    "name": "NO2",
+                    "value": 30.23
+                },
+                {
+                    "name": "O3",
+                    "value": 72.21
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 25.1
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 262.49
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T03:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Perfect air for exercising! Go for it!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.38
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 74.91,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.14,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 25.5,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 129.01,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T04:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.82
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.82
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.56
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1016.18
+                },
+                {
+                    "name": "NO2",
+                    "value": 32.25
+                },
+                {
+                    "name": "O3",
+                    "value": 74.91
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 24.3
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 263.03
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T04:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It couldn't be better ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 8.03
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 66.69,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 12.81,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 32.09,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 131.35,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T05:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.49
+                },
+                {
+                    "name": "PM25",
+                    "value": 4.81
+                },
+                {
+                    "name": "PM10",
+                    "value": 5.77
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1016.51
+                },
+                {
+                    "name": "NO2",
+                    "value": 32.84
+                },
+                {
+                    "name": "O3",
+                    "value": 66.69
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 23.11
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 262.98
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T05:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe as much as you can!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 9.52
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 56.87,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 15.25,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 38.05,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 120.98,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T06:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 4.09
+                },
+                {
+                    "name": "PM25",
+                    "value": 5.71
+                },
+                {
+                    "name": "PM10",
+                    "value": 6.86
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1016.86
+                },
+                {
+                    "name": "NO2",
+                    "value": 30.25
+                },
+                {
+                    "name": "O3",
+                    "value": 56.87
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 21.84
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 261.58
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T06:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Zero dust - zero worries!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 9.12
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 59.68,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 14.52,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 36.47,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 116.86,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T07:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.93
+                },
+                {
+                    "name": "PM25",
+                    "value": 5.47
+                },
+                {
+                    "name": "PM10",
+                    "value": 6.53
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.7
+                },
+                {
+                    "name": "NO2",
+                    "value": 29.21
+                },
+                {
+                    "name": "O3",
+                    "value": 59.68
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 21.69
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 261.05
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T07:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is grand today. ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.66
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 65.93,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.7,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 26.6,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 107.16,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T08:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.79
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.99
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.81
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1018.0
+                },
+                {
+                    "name": "NO2",
+                    "value": 26.79
+                },
+                {
+                    "name": "O3",
+                    "value": 65.93
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 22.82
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 265.56
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T08:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe deeply!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.47
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 70.23,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.45,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 25.86,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 104.01,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T09:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.72
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.88
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.7
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.93
+                },
+                {
+                    "name": "NO2",
+                    "value": 26.0
+                },
+                {
+                    "name": "O3",
+                    "value": 70.23
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 23.85
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 269.02
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T09:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Enjoy life!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.83
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 74.1,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 11.05,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 27.28,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 104.09,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T10:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.74
+                },
+                {
+                    "name": "PM25",
+                    "value": 4.09
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.97
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1018.08
+                },
+                {
+                    "name": "NO2",
+                    "value": 26.02
+                },
+                {
+                    "name": "O3",
+                    "value": 74.1
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 24.06
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 270.5
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T10:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe to fill your lungs!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.5
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 73.72,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.61,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 25.99,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 101.65,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T11:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.75
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.9
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.78
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1018.09
+                },
+                {
+                    "name": "NO2",
+                    "value": 25.41
+                },
+                {
+                    "name": "O3",
+                    "value": 73.72
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 22.97
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 270.04
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T11:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Great air!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 7.74
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 78.19,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 12.44,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 30.96,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 106.27,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T12:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 3.34
+                },
+                {
+                    "name": "PM25",
+                    "value": 4.64
+                },
+                {
+                    "name": "PM10",
+                    "value": 5.6
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.8
+                },
+                {
+                    "name": "NO2",
+                    "value": 26.57
+                },
+                {
+                    "name": "O3",
+                    "value": 78.19
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 22.46
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 270.02
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T12:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Zero dust - zero worries!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.22
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 75.5,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 9.89,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 24.86,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 99.91,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T13:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.72
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.73
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.45
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.51
+                },
+                {
+                    "name": "NO2",
+                    "value": 24.98
+                },
+                {
+                    "name": "O3",
+                    "value": 75.5
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 22.51
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 271.0
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T13:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Enjoy life!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 4.39
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 68.88,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 7.17,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 17.55,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 81.14,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T14:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 1.8
+                },
+                {
+                    "name": "PM25",
+                    "value": 2.63
+                },
+                {
+                    "name": "PM10",
+                    "value": 3.23
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.33
+                },
+                {
+                    "name": "NO2",
+                    "value": 20.29
+                },
+                {
+                    "name": "O3",
+                    "value": 68.88
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 20.92
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 271.47
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T14:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Breathe deeply!",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 4.46
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 79.03,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 7.28,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 17.82,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 82.17,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T15:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 1.83
+                },
+                {
+                    "name": "PM25",
+                    "value": 2.67
+                },
+                {
+                    "name": "PM10",
+                    "value": 3.27
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.24
+                },
+                {
+                    "name": "NO2",
+                    "value": 20.54
+                },
+                {
+                    "name": "O3",
+                    "value": 79.03
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 17.5
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 271.12
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T15:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "It couldn't be better ;)",
+                    "color": "#6BC926",
+                    "description": "Great air here today!",
+                    "level": "VERY_LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 6.61
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 92.6,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 10.51,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 26.41,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 147.96,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T16:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 2.87
+                },
+                {
+                    "name": "PM25",
+                    "value": 3.96
+                },
+                {
+                    "name": "PM10",
+                    "value": 4.73
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.36
+                },
+                {
+                    "name": "NO2",
+                    "value": 36.99
+                },
+                {
+                    "name": "O3",
+                    "value": 92.6
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 13.03
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 268.36
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T16:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Don't miss this day! The clean air calls!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 27.28
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 42.16,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 46.6,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 109.1,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 183.0,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T17:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 11.01
+                },
+                {
+                    "name": "PM25",
+                    "value": 16.37
+                },
+                {
+                    "name": "PM10",
+                    "value": 20.97
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.45
+                },
+                {
+                    "name": "NO2",
+                    "value": 45.75
+                },
+                {
+                    "name": "O3",
+                    "value": 42.16
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 9.61
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 263.79
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T17:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Do you smell it? That's the smell of clean air. :)",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 33.43
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 17.39,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 57.35,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 133.68,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 175.48,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T18:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 13.41
+                },
+                {
+                    "name": "PM25",
+                    "value": 20.05
+                },
+                {
+                    "name": "PM10",
+                    "value": 25.81
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.39
+                },
+                {
+                    "name": "NO2",
+                    "value": 43.87
+                },
+                {
+                    "name": "O3",
+                    "value": 17.39
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 7.8
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 257.81
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T18:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Yes, yes - it's true. The air quality is good today!",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 40.28
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 14.01,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 73.45,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 161.12,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 157.82,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T19:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 15.74
+                },
+                {
+                    "name": "PM25",
+                    "value": 24.17
+                },
+                {
+                    "name": "PM10",
+                    "value": 33.05
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.42
+                },
+                {
+                    "name": "NO2",
+                    "value": 39.46
+                },
+                {
+                    "name": "O3",
+                    "value": 14.01
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 6.64
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 251.21
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T19:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Enjoy the clean air.",
+                    "color": "#D1CF1E",
+                    "description": "Well... It's been better.",
+                    "level": "LOW",
+                    "name": "AIRLY_CAQI",
+                    "value": 49.43
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 7.86,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 93.29,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 197.69,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 150.07,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T20:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 19.43
+                },
+                {
+                    "name": "PM25",
+                    "value": 29.65
+                },
+                {
+                    "name": "PM10",
+                    "value": 41.98
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.74
+                },
+                {
+                    "name": "NO2",
+                    "value": 37.52
+                },
+                {
+                    "name": "O3",
+                    "value": 7.86
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 6.08
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 246.71
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T20:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "Watch out - a few signs of smog today.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 54.41
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 5.15,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 104.7,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 229.35,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 148.16,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T21:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 22.39
+                },
+                {
+                    "name": "PM25",
+                    "value": 34.4
+                },
+                {
+                    "name": "PM10",
+                    "value": 47.11
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.78
+                },
+                {
+                    "name": "NO2",
+                    "value": 37.04
+                },
+                {
+                    "name": "O3",
+                    "value": 5.15
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 5.56
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 241.32
+                }
+            ]
+        },
+        {
+            "fromDateTime": "2024-10-14T21:00:00.000Z",
+            "indexes": [
+                {
+                    "advice": "The air is slightly polluted.",
+                    "color": "#EFBB0F",
+                    "description": "The air quality is average.",
+                    "level": "MEDIUM",
+                    "name": "AIRLY_CAQI",
+                    "value": 56.33
+                }
+            ],
+            "standards": [
+                {
+                    "averaging": "8h",
+                    "limit": 100.0,
+                    "name": "WHO",
+                    "percent": 8.35,
+                    "pollutant": "O3"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 45.0,
+                    "name": "WHO",
+                    "percent": 108.38,
+                    "pollutant": "PM10"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 15.0,
+                    "name": "WHO",
+                    "percent": 242.19,
+                    "pollutant": "PM25"
+                },
+                {
+                    "averaging": "24h",
+                    "limit": 25.0,
+                    "name": "WHO",
+                    "percent": 136.77,
+                    "pollutant": "NO2"
+                }
+            ],
+            "tillDateTime": "2024-10-14T22:00:00.000Z",
+            "values": [
+                {
+                    "name": "PM1",
+                    "value": 23.32
+                },
+                {
+                    "name": "PM25",
+                    "value": 36.33
+                },
+                {
+                    "name": "PM10",
+                    "value": 48.77
+                },
+                {
+                    "name": "PRESSURE",
+                    "value": 1017.79
+                },
+                {
+                    "name": "NO2",
+                    "value": 34.19
+                },
+                {
+                    "name": "O3",
+                    "value": 8.35
+                },
+                {
+                    "name": "WIND_SPEED",
+                    "value": 4.56
+                },
+                {
+                    "name": "WIND_BEARING",
+                    "value": 232.91
+                }
+            ]
+        }
+    ]
+}
