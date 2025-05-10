@@ -2,10 +2,9 @@ name: Plot charts
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Get measurements from Airly"]
-    types:
-      - completed
+  schedule:
+    # Runs "10 30 pm every saturday" (see https://crontab.guru)
+    - cron: "30 22 * * 6"
 
 jobs:
   get_measurements:
